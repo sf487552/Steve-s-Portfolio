@@ -20,98 +20,136 @@
 </head>
 
 <body>
-    <div class="background-img"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
-        <div class="container-fluid">
-            <div class="box-shadow">
-                <a class="box-shadow navbar-brand" href="#">
-                    <h1 class="box-shadow glitch"></h1>
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a data-page="home" class="box-shadow nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="about" data-page="about" class="box-shadow nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="other-creative-work" data-page="other-work" class="box-shadow nav-link" href="#other-work">Other Creative Work</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a data-page="work" class="box-shadow nav-link dropdown-toggle" href="#my-work"
-                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            My Work
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Project 1</a></li>
-                            <li><a class="dropdown-item" href="#">Project 2</a></li>
-                            <li><a class="dropdown-item" href="#">Project 3</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Other Creative Work</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <ul class="socials">
-                        <a class="social-icon" data-tooltip="steven.fokas89@gmail.com"
-                            href="mailto:steven.fokas89@gmail.com">
-                            <i class="fa fa-envelope"></i>
-                        </a>                        
-                        <a class="social-icon" data-tooltip="GitHub" href="https://github.com/sf487552">
-                            <i class="fa fa-github"></i>
-                        </a>                       
-                        <a class="social-icon" data-tooltip="LinkedIn"
-                            href="https://www.linkedin.com/in/steven-fokas-01933849/">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a class="social-icon" data-tooltip="+1-610-653-0662" href="tel:610-653-0662">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                     
+    <header>
+        <div class="background-img"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+            <div class="container-fluid">
+                <div class="box-shadow">
+                    <a class="box-shadow navbar-brand" href="#">
+                        <h1 class="glitch box-shadow"></h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a data-page="home" class="box-shadow nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="about" data-page="about" class="box-shadow nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a data-page="work" class="box-shadow nav-link dropdown-toggle" href="#my-work"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Work
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                                <li><a class="dropdown-item" href="#">Project 3</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#other-work">Other Creative Work</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                    <div class="d-flex">
+                        <ul class="socials">
+                            <a class="social-icon" data-tooltip="steven.fokas89@gmail.com"
+                                href="mailto:steven.fokas89@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>                        
+                            <a class="social-icon" data-tooltip="GitHub" href="https://github.com/sf487552">
+                                <i class="fa fa-github"></i>
+                            </a>                       
+                            <a class="social-icon" data-tooltip="LinkedIn"
+                                href="https://www.linkedin.com/in/steven-fokas-01933849/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a class="social-icon" data-tooltip="+1-610-653-0662" href="tel:610-653-0662">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                        
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- <div class="container main-view"> -->
-    <div class="container" id="about-me">
-        <h1 class="title center"><span class="light">About Me</span></h1>
-        <p class="center"><span class="light"> Web Developer creating unique and intuitive experiences
-                for all types of users. Currently earning a certificate for full stack development
-                from the University of Pennsylvania where I am cultivating my skills in Javascript,
-                CSS, and HTML. Years of creative problem solving have helped me to develop a unique
-                perspective which allows me to develop original, eye-catching, and intuitively
-                designed web tools that keeps users engaged. Creative design projects come naturally
-                to me thanks to the skills I’ve developed as a successful artist/sound engineer with
-                a diverse portfolio of projects that have seen success across the globe in over 70
-                different countries. My communication skills have been fine tuned over the years to
-                create work that can be understood and enjoyed by all types of people from all
-                different backgrounds. I look forward to using my unique skills to develop
-                innovative web pages and platforms for my users.</span>
-        </p>
-        <figure id="resume">
-            <h2 class="title center"><span class="light">Resume</span></h2>
-            <div class="card-body">
-                <i class=menu></i>
-                <a class="view-resume"
-                    href="https://docs.google.com/document/d/1gU-R_xrsGzjy3LKaFQup1oYX_ipGa3HljVCatWf2Bpc/edit?usp=sharing"
-                    target="_blank">Click To View</a>
+        <div class="container" id="home"> 
+            <img src="images/steve's pic.jpg" class="headshot">   
+            <div id="homepage">
+                <span id="L">H</span>
+                <span id="I">E</span>
+                <span id="G">L</span>
+                <span id="H">L</span>
+                <span id="T">O</span>
             </div>
-        </figure>
-    </div>
+            <div id="homepage">
+                <span id="L">M</span>
+                <span id="I">Y</span>
+            </div>
+            <div id="homepage">
+                <span id="L">N</span>
+                <span id="I">A</span>
+                <span id="L">M</span>
+                <span id="I">E</span>
+            </div>
+            <div id="homepage">
+                <span id="L">I</span>
+                <span id="I">S</span>
+            </div>
+            <div id="homepage">
+                <span id="L">S</span>
+                <span id="I">T</span>
+                <span id="L">E</span>
+                <span id="I">V</span>
+                <span id="I">E</span>
+            </div>
+        </div>    
+        <div class="container w3-col m6 w3-padding-large" id="about-me">
+            <h1 class="title text w3-center">About Me.</h1><br>
+            <h5 class="text w3-center">I'm a</h5>
+            
+            <p class="text w3-large">Web Developer creating unique and intuitive experiences
+                for all types of users.
+            </p>
+            
+            <p class="text w3-large w3-text-grey w3-hide-medium">I am currently earning a certificate for full stack developmentfrom the
+                University of Pennsylvania where I am cultivating my skills in Javascript, CSS, and HTML.
+            </p>
+            <p class="text w3-large w3-text-grey w3-hide-medium">Years of creative problem solving have helped me to develop a unique
+                perspective which allows me to develop original, eye-catching and intuitively designed web tools that keeps users
+                engaged.
+            </p>
+            <p class="text w3-large w3-text-grey w3-hide-medium">Creative design projects come naturallyto me thanks to the skills I’ve
+                developed as a successful artist/sound engineer with a diverse portfolio of projects that have seen success across
+                the globe in over 70 different countries.
+            </p>
+            <p class="text w3-large w3-text-grey w3-hide-medium">Creative design projects come naturallyto me thanks to the skills I’ve
+                developed as a successful artist/sound engineer with a diverse portfolio of projects that have seen success across
+                the globe in over 70 different countries.
+            </p>
+            <p class="text w3-large w3-text-grey w3-hide-medium">My communication skills have been fine tuned over the years to create
+                work that can be understood and enjoyed by all types of people from all different backgrounds.
+            </p>
+            <p class="text w3-large w3-text-grey w3-hide-medium">
+                look forward to using my unique skills to develop
+                innovative web pages and platforms for my users!
+            </p>
+
+          </div>
+        </div>
     <div class="container" id="my-work">
-        <div class="work-section">
-            <h1 class="title center"><span class="light">My Work</span></h1>
-            <div class="row">
+        <h1 class="title center"><span class="light">My Work</span></h1>
+        <div id="projects" class="work-section">
+            <div class="row" mr=0>
                 <div class="card col" id="project-box">
                     <img class="project-1" src="images/coding quiz.jpg" alt="Project 1" />
                     <div class="image-overlay">
