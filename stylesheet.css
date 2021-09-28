@@ -222,7 +222,7 @@ footer h2 {
     color: #317e9c;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
@@ -230,7 +230,7 @@ footer h2 {
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 2) {
       .navbar-nav {padding-top: 30px;
     }
