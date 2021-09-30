@@ -10,6 +10,9 @@ body {
     /* overflow: scroll; */
 }
 
+h1 {
+  background-color: black;
+}
 
 .background-img {
     background-size: cover;
@@ -25,8 +28,9 @@ body {
 }
 
 .container {
-    margin: 0px auto;
+    /* margin: 0px auto; */
     margin-top: 70px;
+    margin-bottom: 50px;
     width: auto;
     background-color: transparent;
     padding-bottom: 10px;
@@ -35,12 +39,14 @@ body {
     border-radius: 5px;
       height: 100%;
     color: black;
+    max-width: 75%;
 }
+
 
 p {
     font-family: 'Montserrat, Helvetica, Arial, sans-serif';
     color: black;
-    font-weight:lighter;
+    font-weight:normal;
     line-height: 1;
 }
 
@@ -61,11 +67,13 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 3.5px;
 }
 
+
 #home {
     align-items: center;
     background-color: black;
     border: 0px;
     margin: auto;
+    max-width: 15rem;
 }
 
 #my-work {
@@ -90,12 +98,17 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: auto;
 }
 
 .row {
     margin-top: 100px;
     max-width: 25%;
 
+}
+
+.project {
+  display: none;
 }
 
 #project-box {
@@ -138,6 +151,10 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
 }
 
+.light {
+  background-color: black;
+}
+
 .d-flex {
     padding-left: 70px;
     padding-right: 15px;
@@ -161,6 +178,10 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
   margin-left: 25%;
   margin-right: 25%;
+  padding: 15px;
+  font-weight: bolder;
+  background-color: black;
+  width: auto;
 }
 
 .fullStack {
@@ -193,7 +214,7 @@ footer p {
     /* font-size: .9rem; */
     text-align: center;
     color:black;
-    font-weight:lighter;
+    font-weight:normal;
     line-height: 1;
 }
 
@@ -211,6 +232,9 @@ footer p {
 
 #project-box {
   flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .card {
@@ -218,8 +242,9 @@ footer p {
   width: auto;
   height: auto;
   transition: 0.5s;
-  /* background-color: black; */
-  
+  background-color: black;
+  font-family: 'Arial';  
+  margin: 20px;
 }
 
 .card:hover {
@@ -243,6 +268,10 @@ footer p {
 
 .social-icon :hover{
     color: #317e9c;
+}
+
+@media screen {
+  
 }
 
 @media all and (min-width: 768px) {
@@ -868,6 +897,7 @@ div > span {
 
 /* homepage button */
 
+
 .learnMore {
     font-size: 20px;
     color: var(--white);
@@ -886,11 +916,14 @@ div > span {
 
 .center {
     align-items: center;
-    margin: 10px;
     position: relative;
     width: auto;
-    background-color: none;
+    background-color: black;
+    background-size: cover;
     width: auto;
+    padding: 0;
+    margin: auto;
+
 }
 
 .mainPage {
@@ -898,13 +931,15 @@ div > span {
     width: auto;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .homeBtn {
     background-color: transparent;
-    width: 200px;
+    width: 12rem;
     height: auto;
-    margin: 10%;
+    margin: auto;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
   --offset: 10px;
@@ -966,7 +1001,28 @@ div > span {
 }
 .homeBtn:hover .homeBtn__vertical {
   transform: scaleY(0);
+  cursor: pointer;
 }
+
+.text {
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 10px 20px -18px inset;
+}
+
+.text {
+  /*
+    All of the base styles have
+    moved to the “CSS” tab above.
+  */
+  transition: transform 250ms;
+}
+
+.text:hover {
+  transform: translateY(-10px);
+}
+
+/* .aboutMe {
+  justify-content: ce
+} */
 
 
   
