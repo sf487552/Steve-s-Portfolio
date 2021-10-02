@@ -10,9 +10,40 @@ body {
     /* overflow: scroll; */
 }
 
+.headshot {
+  margin-right: 25px;
+}
+
+.someLinks {
+  background-color: transparent;
+  align-items: center;
+}
+
+#projectInfo {
+  height: fit-content;
+  background-size: cover;
+}
+
 h1 {
   background-color: black;
 }
+
+#project-1 {
+  display: none;
+}
+
+#project-2 {
+  display: none;
+}
+
+#project-3 {
+  display: none;
+}
+
+.float-left {
+  float: left;
+}
+
 
 .background-img {
     background-size: cover;
@@ -115,6 +146,10 @@ h1, h2, h3, h4, h5, h6, p {
   flex: 1;
 }
 
+.container-fluid {
+  background-color: transparent;
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -127,17 +162,41 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+
+
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0.1);
 }
 
+
+
 .navbar-toggler {
     float: right;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 20%;
+  margin-right: 10%;
+}
+
+.right {
+  width: 70%;
+  float: right;
+}
+
 .header {
   overflow: hidden;
+}
+
+header {
+  background-color: black;
+  color: white;
 }
 
 .header a {
@@ -237,12 +296,16 @@ footer p {
   margin: auto;
 }
 
+.sideClick {
+  background-color: black;
+}
+
 .card {
   position: relative;
   width: auto;
   height: auto;
   transition: 0.5s;
-  background-color: black;
+  background-color: transparent;
   font-family: 'Arial';  
   margin: 20px;
 }
@@ -832,11 +895,12 @@ div > span {
 }
 
 .headshot {
-    width: 25%;
+    width: 100%;
     padding-top: 25px;;
     flex-wrap: wrap;
     float: left;
     position: relative;
+    margin-bottom: 20px;
 }
 
 @media only screen 
@@ -1002,6 +1066,76 @@ div > span {
 .homeBtn:hover .homeBtn__vertical {
   transform: scaleY(0);
   cursor: pointer;
+}
+
+.projectlnk {
+  background-color: transparent;
+  width: 12rem;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+--offset: 10px;
+--border-size: 2px;
+display: block;
+position: relative;
+-webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+background: black;
+color:whitesmoke;
+outline: none;
+cursor: pointer;
+font-weight: bold;
+box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+transition: background 0.8s ease;
+}
+.projectlnk:hover {
+background: rgba(100, 0, 0, 0.03);
+}
+.projectlnk__horizontal, .projectlnk__vertical {
+position: absolute;
+top: var(--horizontal-offset, 0);
+right: var(--vertical-offset, 0);
+bottom: var(--horizontal-offset, 0);
+left: var(--vertical-offset, 0);
+transition: transform 0.8s ease;
+will-change: transform;
+}
+.projectlnk__horizontal::before, .projectlnk__vertical::before {
+content: "";
+position: absolute;
+border: inherit;
+}
+.projectlnk__horizontal {
+--vertical-offset: calc(var(--offset) * -1);
+border-top: var(--border-size) solid currentcolor;
+border-bottom: var(--border-size) solid currentcolor;
+}
+.projectlnk__horizontal::before {
+top: calc(var(--vertical-offset) - var(--border-size));
+bottom: calc(var(--vertical-offset) - var(--border-size));
+left: calc(var(--vertical-offset) * -1);
+right: calc(var(--vertical-offset) * -1);
+}
+.projectlnk:hover .projectlnk__horizontal {
+transform: scaleX(0);
+}
+.projectlnk__vertical {
+--horizontal-offset: calc(var(--offset) * -1);
+border-left: var(--border-size) solid currentcolor;
+border-right: var(--border-size) solid currentcolor;
+}
+.projectlnk__vertical::before {
+top: calc(var(--horizontal-offset) * -1);
+bottom: calc(var(--horizontal-offset) * -1);
+left: calc(var(--horizontal-offset) - var(--border-size));
+right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.projectlnk:hover .projectlnk__vertical {
+transform: scaleY(0);
+cursor: pointer;
 }
 
 .text {

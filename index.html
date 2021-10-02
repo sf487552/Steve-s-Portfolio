@@ -49,9 +49,9 @@
                                 My Work
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="1">Coding Quiz</a></li>
-                                <li><a class="dropdown-item" href="2">Weather App</a></li>
-                                <li><a class="dropdown-item" href="3">Quizzes & Cocktails</a></li>
+                                <li><a class="dropdown-item" href="#project-1">Coding Quiz</a></li>
+                                <li><a class="dropdown-item" href="#project-2">Weather App</a></li>
+                                <li><a class="dropdown-item" href="#project-3">Quizzes & Cocktails</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -185,19 +185,19 @@
         </h1><br>
         <div id="container projects" class="work-section">
             <div class="projects center" mr=0>
-                <div class="card" id="project-box" href="project-1">
-                    <img class="project-1" src="images/coding quiz.jpg" alt="Project 1" />
-                    <div class="image-overlay"><a>Coding Quiz</a></div>
+                <div class="sideClick card" id="project-box">
+                    <img class="project-1" src="images/coding quiz.jpg" alt="Project-1" />
+                    <div class="image-overlay"><a class="button-1" href="#project-1">Coding Quiz</a></div>
                 </div>
                 <br>
-                <div class="card" id="project-box" href="project-2">
-                    <img class="project-2" src="images/weather app.jpg" alt="Project 2" />
-                    <div class="image-overlay"><a>Weather App</a></div>
+                <div class="sideClick card" id="project-box">
+                    <img class="project-2" src="images/weather app.jpg" alt="Project-2" />
+                    <div class="image-overlay"><a class="button-2" href="#project-2">Weather App</a></div>
                 </div>
                 <br>
-                <div class="card" id="project-box" href="project-3">
-                    <img class="project-3" src="images/cocktailquiz.jpg" alt="Project 3" />
-                    <div class="image-overlay"><a>Cocktails & Quizzes</a></div>
+                <div class="sideClick card" id="project-box">
+                    <img class="project-3" src="images/cocktailquiz.jpg" alt="Project-3" />
+                    <div class="image-overlay"><a class="button-3" href="#project-3">Cocktails & Quizzes</a></div>
                 </div>
             </div>
         </div>
@@ -243,21 +243,59 @@
     </div>
     </div>
 
-    <div class="project 1">
+    <div class="container" id="project-1">
         <div>
-            <a class="image-title" id="project-1" href="https://sf487552.github.io/Coding-Quiz/">Coding Quiz</a>
+            <header class="text w3-large box-shadow">Coding Quiz</header>
+            <p class="text w3-large box-shadow">This app was developed using...
+            </p>
+            <a class="image-title" href="https://sf487552.github.io/Coding-Quiz/">Coding Quiz</a>
             <a class="repository" href="https://github.com/sf487552/Coding-Quiz">GitHub Repository</a>
         </div>
     </div>
-    <div class="project 2">
-        <div>
-            <a class="image-title" id="project-1" href="https://sf487552.github.io/Weather-Dashboard/">Weather App</a>
-            <a class="repository" href="https://github.com/sf487552/Weather-Dashboard">GitHub Repository</a>
+    <div id="project-2" class="container float-left">
+        <div class="code-card container-fluid">
+            <div class="float-left column left someLinks">
+                <ul class="float-left">
+                    <li>
+                        <button id="learnMore L" class="image-title projectlnk learnMore" href="https://sf487552.github.io/Weather-Dashboard/">
+                            <div class="projectlnk__horizontal" id="I"></div>
+                            <div class="projectlnk__vertical" id="T"></div>
+                            Weather App
+                        </button>
+                    </li>
+                    <li>
+                        <button id="learnMore L" class="repository projectlnk learnMore" data-page="about" href="https://github.com/sf487552/Weather-Dashboard">
+                            <div class="projectlnk__horizontal" id="I"></div>
+                            <div class="projectlnk__vertical" id="T"></div>
+                            GitHub Repository
+                        </button>
+                    </li>
+                    <li>
+                        <button id="learnMore L" class="projectlnk learnMore" data-page="about" href="#my-work">
+                            <div class="projectlnk__horizontal" id="I"></div>
+                            <div class="projectlnk__vertical" id="T"></div>
+                            Back to Projects
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="column right split">
+                <p class="text w3-large box-shadow">Weather-Dashboard</p>
+                <br>
+                <p id="projectInfo" class="text w3-large box-shadow">
+                   This app was developed using the Javascript, HTML, CSS, Json, and the "OpenWeather One Call API" to retrieve weather data for cities and store any persistent data in the localStorage.
+                </p>
+                <br>
+                <img src="images/weather app.jpg" class="text w3-large box-shadow headshot">
+            </div>
         </div>
     </div>
-    <div class="project 3">
+    <div id="project-3" class="container">
         <div>
-            <a class="image-title" id="project-1" href="https://sf487552.github.io/Group-Project-1/">Quizzes & Cocktails</a>
+            <p class="text w3-large box-shadow">Quizzes & Cocktails</p>
+            <p class="text w3-large box-shadow">This app was developed using...
+            </p>
+            <a class="image-title" href="https://sf487552.github.io/Group-Project-1/">Quizzes & Cocktails</a>
             <a class="repository" href="https://github.com/sf487552/Group-Project-1">GitHub Repository</a>
         </div>
     </div>
