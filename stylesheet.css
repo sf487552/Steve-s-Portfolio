@@ -79,6 +79,7 @@ p {
     color: black;
     font-weight:normal;
     line-height: 1;
+    font-size:larger;
 }
 
 #about-me {
@@ -89,7 +90,7 @@ p {
 .text {
     background-color:whitesmoke;
     color: black;
-    padding: 20px;
+    padding: 10px;
     font-weight: bolder;
 }
 
@@ -1066,6 +1067,10 @@ div > span {
 .homeBtn:hover .homeBtn__vertical {
   transform: scaleY(0);
   cursor: pointer;
+}
+
+.gitlinks {
+  color: black;
 }
 
 .projectlnk {
